@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    font-family: Winky Rough, sans-serif;
+}
+
+.landing-page {
+
+
+    background-image: url("asset/bg1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landing-page .landing-text {
+    height: 100svh;
+
+    padding: 5vw 5vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page .landing-text h3 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.landing-page .landing-text h5 {
+    color: white;
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    .landing-page {
+        background-image: url("asset/bg-vertical.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .landing-page .landing-text h3 {
+        font-size: 2.5rem;
+    }
+}
