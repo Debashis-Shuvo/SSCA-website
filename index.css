@@ -161,6 +161,7 @@ a {
 .timeline .thumbnail img {
     width: 14rem;
     border-radius: 5px;
+    max-height: 105px;
 }
 
 .timeline .thumbnail {
