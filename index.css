@@ -96,7 +96,7 @@ a {
 
 @media (max-width: 600px) {
     html {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .landing-page .nav-bar {
