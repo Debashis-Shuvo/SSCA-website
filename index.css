@@ -92,7 +92,7 @@ a {
 }
 
 .about-us img {
-    width: 15rem;
+    width: 28rem;
     height: auto;
 }
 
@@ -119,9 +119,9 @@ a {
         background-position: center;
     }
 
-    .landing-page .landing-text h3 {
+    /* .landing-page .landing-text h3 {
         font-size: 2.5rem;
-    }
+    } */
 
     .about-us {
         flex-direction: column;
