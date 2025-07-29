@@ -71,7 +71,7 @@ a {
 }
 
 .about-us {
-    height: 100dvh;
+    height: 100svh;
     min-height: 685px;
 
     display: flex;
@@ -98,7 +98,7 @@ a {
 }
 
 .committee {
-    height: 100vh;
+    height: 100svh;
     min-height: 685px;
     gap: 25px;
 
