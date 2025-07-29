@@ -142,6 +142,58 @@ a {
     color: white;
 }
 
+.timeline {
+    height: 100vh;
+    min-height: 685px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.timeline h3 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.timeline .thumbnail img {
+    width: 14rem;
+    border-radius: 5px;
+}
+
+.timeline .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    width: 70vw;
+    /* margin: 0 auto; */
+
+    border: 2px solid white;
+    border-radius: 5px;
+
+    padding: 15px;
+}
+
+.timeline .thumbnail h5 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.timeline .thumbnail .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.timeline .thumbnail p {
+    color: white;
+    font-size: 0.8rem;
+}
+
 @media (max-width: 600px) {
     html {
         font-size: 10px;
