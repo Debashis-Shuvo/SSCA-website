@@ -98,7 +98,7 @@ a {
 }
 
 .committee {
-    height: 100dvh;
+    height: 100vh;
     min-height: 685px;
     gap: 25px;
 
@@ -173,5 +173,8 @@ a {
 
     .committee .all-members {
         grid-template-columns: 1fr 1fr;
+    }
+    .committee .all-members .member-card {
+        margin: 5px;
     }
 }
