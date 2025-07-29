@@ -4,6 +4,13 @@
     font-family: Winky Rough, sans-serif;
 }
 
+html {
+    background-image: url(asset/bg-2nd-vertical.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -57,12 +64,41 @@ a {
     font-size: 3.5rem;
 }
 
-.landing-page .landing-text h5 {
+.landing-page .landing-text p {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.about-us {
+    height: 100svh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    padding: 1rem 2rem;
+}
+
+.about-us .about-us-text h5 {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.about-us .about-us-text p {
+    color: white;
+    font-size: 1rem;
+}
+
+.about-us img {
+    width: 15rem;
 }
 
 @media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
     .landing-page .nav-bar {
         gap: 5px;
     }
@@ -83,5 +119,11 @@ a {
 
     .landing-page .landing-text h3 {
         font-size: 2.5rem;
+    }
+
+    .about-us {
+        flex-direction: column;
+
+        gap: 10px;
     }
 }
