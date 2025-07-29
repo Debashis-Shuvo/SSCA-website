@@ -70,7 +70,8 @@ a {
 }
 
 .about-us {
-    height: 100svh;
+    height: 100dvh;
+    min-height: 685px;
 
     display: flex;
     justify-content: center;
@@ -92,6 +93,7 @@ a {
 
 .about-us img {
     width: 15rem;
+    height: auto;
 }
 
 @media (max-width: 600px) {
