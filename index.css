@@ -6,7 +6,7 @@
 
 html {
     background-image: url(asset/bg-2nd-vertical.jpg);
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: repeat;
     background-position: center;
 }
@@ -128,7 +128,7 @@ a {
 }
 
 .committee .all-members .member-card img {
-    width: 8rem;
+    width: 10rem;
     border-radius: 5px;
 }
 
@@ -195,10 +195,59 @@ a {
     font-size: 0.8rem;
 }
 
+
+/* 
+
+
+    Contact Section
+
+
+*/
+.contact-section {
+    height: 100vh;
+    min-height: 685px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.contact-section h3 {
+    color: white;
+    font-size: 3rem;
+}
+
+.contact-section .contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.contact-section .contact-links a {
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 20px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    width: 55vw;
+}
+
 @media (max-width: 600px) {
     html {
         font-size: 10px;
+
     }
+
 
     .landing-page .nav-bar {
         gap: 5px;
@@ -227,6 +276,7 @@ a {
     .committee .all-members {
         grid-template-columns: 1fr 1fr;
     }
+
     .committee .all-members .member-card {
         margin: 5px;
     }
