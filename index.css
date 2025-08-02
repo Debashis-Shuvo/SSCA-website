@@ -49,7 +49,7 @@ a {
 }
 
 
-.landing-page .landing-text {
+ .landing-page .banner {
     flex: 1;
 
     padding: 5vw 5vw;
@@ -58,16 +58,35 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
-.landing-page .landing-text h3 {
+.landing-page .banner .landing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page .banner .landing-text h3 {
     color: white;
     font-size: 3.5rem;
 }
 
-.landing-page .landing-text p {
+.landing-page .banner .landing-text p {
     color: white;
     font-size: 1.5rem;
+}
+
+.landing-page .banner .events {
+    color: black;
+    font-size: 1.2rem;
+
+    border: 2px solid rgb(255, 234, 0);
+    border-radius: 5px;
+    background-color: rgb(255, 234, 0);
+
+    padding: 5px 15px;
 }
 
 .about-us {
