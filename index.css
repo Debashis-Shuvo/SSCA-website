@@ -210,7 +210,7 @@ a {
 }
 
 .timeline .thumbnail img {
-    width: 14rem;
+    width: 12rem;
     border-radius: 5px;
     max-height: 105px;
 }
@@ -228,6 +228,10 @@ a {
     border-radius: 5px;
 
     padding: 15px;
+}
+
+.timeline .thumbnail:hover {
+    border: 2px solid var(--yellow);
 }
 
 .timeline .thumbnail h5 {
