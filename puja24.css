@@ -55,11 +55,20 @@ body h3 {
     border-radius: 0.5rem;
 }
 
+/* .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+
+} */
+
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
 
+    width: 100%;
+    height: 100%;
 }
 
 .slider-nav {
