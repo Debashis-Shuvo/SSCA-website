@@ -1,3 +1,6 @@
+:root {
+    --yellow: rgb(255, 234, 0);
+}
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +18,10 @@ a {
     color: white;
     text-decoration: none;
 }
+
+/* 
+        Landing Page
+*/
 
 .landing-page {
     height: 100vh;
@@ -82,12 +89,16 @@ a {
     color: black;
     font-size: 1.2rem;
 
-    border: 2px solid rgb(255, 234, 0);
+    border: 2px solid var(--yellow);
     border-radius: 5px;
     background-color: rgb(255, 234, 0);
 
     padding: 5px 15px;
 }
+
+/* 
+        ABOUT US 
+*/
 
 .about-us {
     height: 100vh;
@@ -96,13 +107,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 
     padding: 1rem 2rem;
 }
 
 .about-us .about-us-text h5 {
-    color: white;
+    color: var(--yellow);
     font-size: 1.4rem;
 }
 
@@ -114,7 +125,20 @@ a {
 .about-us img {
     width: 28rem;
     height: auto;
+
+    padding: 10px;
+
+    border: 2px solid var(--yellow);
+    border-radius: 5px;
 }
+
+/* 
+
+
+        OFFICIAL COMMITTEE
+
+
+*/
 
 .committee {
     height: 100vh;
@@ -128,7 +152,7 @@ a {
 }
 
 .committee h4 {
-    color: white;
+    color: var(--yellow);
     font-size: 2rem;
 }
 
@@ -147,19 +171,27 @@ a {
 }
 
 .committee .all-members .member-card img {
-    width: 10rem;
+    width: 8rem;
     border-radius: 5px;
 }
 
 .committee .all-members .member-card h5 {
     font-size: 1rem;
-    color: white;
+    color: var(--yellow);
 }
 
 .committee .all-members .member-card p {
     font-size: 0.7rem;
     color: white;
 }
+
+/* 
+
+
+        TIMELINE
+
+
+*/
 
 .timeline {
     height: 100vh;
@@ -173,7 +205,7 @@ a {
 }
 
 .timeline h3 {
-    color: white;
+    color: var(--yellow);
     font-size: 2.5rem;
 }
 
@@ -234,7 +266,7 @@ a {
 }
 
 .contact-section h3 {
-    color: white;
+    color: var(--yellow);
     font-size: 3rem;
 }
 
@@ -256,7 +288,7 @@ a {
     padding: 8px 20px;
 
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 25px;
 
     width: 55vw;
 }
@@ -293,7 +325,7 @@ a {
     }
 
     .committee .all-members {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .committee .all-members .member-card {
