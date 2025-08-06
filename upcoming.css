@@ -1,0 +1,104 @@
+:root {
+    --yellow: rgb(255, 234, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Winky Rough, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(asset/bg-2nd-vertical.jpg);
+    /* background-size: cover; */
+    background-repeat: repeat;
+    background-position: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.up-events {
+    position: relative;
+    height: 100vh;
+    min-height: 685px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.up-events h3 {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%);
+
+    font-size: 2rem;
+    color: var(--yellow);
+}
+
+.up-events .event-card {
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(250, 250, 250, 0.1);
+}
+
+.up-events .container .event-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+    padding: 12px 12px;
+}
+
+.up-events .container .event-card .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.up-events .container .event-card .details h4 {
+    font-size: 1.2rem;
+    color: var(--yellow);
+}
+
+.up-events .container .event-card .details a,
+.up-events .container .event-card .details p {
+    font-size: 1rem;
+}
+
+.up-events .container .event-card .image img {
+    width: 16rem;
+    border-radius: 8px;
+}
+
+.up-events .container .event-card .details .register-button {
+    border: 2px solid white;
+    border-radius: 16px;
+    background-color: white;
+
+    color: black;
+    font-size: 1rem;
+
+    padding: 4px 8px;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 11px;
+    }
+    .up-events .container .event-card {
+        flex-direction: column;
+    }
+}
