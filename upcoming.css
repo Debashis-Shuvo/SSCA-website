@@ -28,7 +28,7 @@ a {
     height: 100vh;
     min-height: 685px;
     width: 100%;
-    min-width: 425px;
+    /* min-width: 425px; */
 
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@ a {
     left: 50%;
     transform: translate(-50%);
 
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     color: var(--yellow);
 }
 
@@ -106,5 +106,11 @@ a {
     }
     .up-events .container .event-card {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    html {
+        font-size: 9px;
     }
 }
