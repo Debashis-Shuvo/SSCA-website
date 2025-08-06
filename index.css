@@ -20,7 +20,7 @@ a {
 }
 
 html, body {
-  height: 100vh;
+  height: 100dvh;
   min-height: 685px;
   margin: 0;
   scroll-snap-type: y mandatory;
@@ -33,7 +33,7 @@ html, body {
 .committee,
 .timeline,
 .contact-section {
-  height: 100vh;
+  height: 100dvh;
   scroll-snap-align: start;
 
   display: flex;
@@ -47,7 +47,7 @@ html, body {
 */
 
 .landing-page {
-    height: 100vh;
+    height: 100dvh;
 
     background-image: url("asset/bg1.jpeg");
     background-size: cover;
@@ -127,7 +127,7 @@ html, body {
 */
 
 .about-us {
-    height: 100vh;
+    height: 100dvh;
     min-height: 685px;
 
     display: flex;
@@ -167,7 +167,7 @@ html, body {
 */
 
 .committee {
-    height: 100vh;
+    height: 100dvh;
     min-height: 685px;
     gap: 25px;
 
@@ -220,7 +220,7 @@ html, body {
 */
 
 .timeline {
-    height: 100vh;
+    height: 100dvh;
     min-height: 685px;
 
     display: flex;
@@ -286,7 +286,7 @@ html, body {
 
 */
 .contact-section {
-    height: 100vh;
+    height: 100dvh;
     min-height: 685px;
 
     display: flex;
