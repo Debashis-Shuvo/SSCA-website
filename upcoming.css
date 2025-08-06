@@ -14,8 +14,12 @@ html {
     background-repeat: repeat;
     background-position: center;
     color: white;
-    overflow-x: hidden;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
 
 a {
     color: white;
