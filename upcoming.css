@@ -20,6 +20,32 @@ html, body {
   overflow-x: hidden;
 }
 
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    padding: 4vh 4vw;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-bar a {
+    font-size: 1rem;
+    color: white;
+}
+
+.nav-bar .right-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-bar .left-nav img {
+    width: 60px;
+    border-radius: 50px;
+}
+
 
 a {
     color: white;
@@ -27,7 +53,6 @@ a {
 }
 
 .up-events {
-    position: relative;
     
     height: 100vh;
     min-height: 685px;
@@ -36,17 +61,14 @@ a {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 50px;
 }
 
 .up-events h3 {
-    position: absolute;
-    top: 4%;
-    left: 50%;
-    transform: translate(-50%);
 
+    margin-top: 25px;
     font-size: 2.4rem;
     color: var(--yellow);
 }
@@ -110,6 +132,10 @@ a {
     }
     .up-events .container .event-card {
         flex-direction: column;
+    }
+
+    .nav-bar {
+        gap: 14px;
     }
 }
 
