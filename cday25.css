@@ -25,7 +25,7 @@ body {
     padding: 2vh 4vw;
 
     /* background-color: rgba(0, 0, 0, 0.4); */
-    background-color: var(--yellow);
+    background-color: rgb(197, 165, 23);
 }
 
 .nav-bar a {

@@ -19,26 +19,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 35px;
 
-    padding: 4vh 4vw;
+    padding: 2vh 4vw;
 
-    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: rgb(197, 165, 23);
 }
 
 .nav-bar a {
-    font-size: 1.5rem;
-    color: white;
-}
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
 
-.nav-bar .right-nav {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
 }
 
-.nav-bar .left-nav img {
-    width: 60px;
-    border-radius: 50px;
+.nav-bar  img {
+    width: 20px;
 }
 
 body h3 {
@@ -134,6 +135,6 @@ body h3 {
     }
 
     .nav-bar {
-        gap: 14px;
+        gap: 18px;
     }
 }
