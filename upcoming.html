@@ -38,7 +38,7 @@
             <img src="asset/icons/timeline.png">
             <span>Timeline</span>
         </a>
-        
+
         <a class="contact-link" href="index.html#contact-section">
             <img src="asset/icons/phone-chat.png">
             <span>Contact</span>
@@ -47,7 +47,7 @@
 
     </nav>
 
-    <div  class="up-events">
+    <div class="up-events">
         <h3>
             Upcoming Events
         </h3>
@@ -75,8 +75,8 @@
                         September 20, 2025 - September 25, 2025
                     </p>
 
-                    <a class="register-button">
-                        Register Here
+                    <a class="register-button" id="etf-donate-btn" href="#">
+                        Donate Here
                     </a>
 
                 </div>
@@ -88,6 +88,45 @@
         </div>
     </div>
 
+    <!-- Interac e-Transfer Modal (simplified) -->
+    <div id="etf-modal" class="etf-overlay" aria-hidden="true">
+        <div class="etf-modal">
+            <button class="etf-close" aria-label="Close">&times;</button>
+
+            <h3>Donation for Durga Puja</h3>
+
+            <div class="etf-field">
+                <label>Recipient (Auto-Deposit):</label>
+                <code id="etf-email"></code>
+                <button id="etf-copy" class="etf-small">Copy</button>
+            </div>
+
+            <button id="etf-send" class="etf-primary">Send e-Transfer</button>
+
+            <!-- Revealed after clicking "Send e-Transfer" -->
+            <div id="etf-banks" class="etf-banks hidden" aria-live="polite">
+                <a href="https://www.rbcroyalbank.com/ways-to-bank/online-banking/" target="_blank" rel="noopener">RBC
+                    Online</a>
+                <a href="https://www.td.com/ca/en/personal-banking/solutions/ways-to-bank/online-banking"
+                    target="_blank" rel="noopener">TD Online</a>
+                <a href="https://www.scotiabank.com/ca/en/personal/ways-to-bank/scotia-online.html" target="_blank"
+                    rel="noopener">Scotiabank Online</a>
+                <a href="https://www.bmo.com/main/personal/online-banking" target="_blank" rel="noopener">BMO Online</a>
+                <a href="https://www.cibc.com/en/personal-banking/ways-to-bank/online-banking.html" target="_blank"
+                    rel="noopener">CIBC Online</a>
+            </div>
+
+            <p class="etf-note">
+                Tip: we use <strong>Auto-Deposit</strong>, so transfers complete instantly—no security question needed.
+            </p>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="etf-toast" role="status" aria-live="polite"></div>
+
+
+    <script src="upcoming.js" defer></script>
 
 
 </body>

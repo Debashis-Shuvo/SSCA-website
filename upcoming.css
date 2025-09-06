@@ -1,6 +1,7 @@
 :root {
     --yellow: rgb(255, 234, 0);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +17,9 @@ html {
     color: white;
 }
 
-html, body {
-  overflow-x: hidden;
+html,
+body {
+    overflow-x: hidden;
 }
 
 .nav-bar {
@@ -43,7 +45,7 @@ html, body {
     gap: 4px;
 }
 
-.nav-bar  img {
+.nav-bar img {
     width: 20px;
 }
 
@@ -54,7 +56,7 @@ a {
 }
 
 .up-events {
-    
+
     height: 100vh;
     min-height: 685px;
     width: 100%;
@@ -85,7 +87,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    
+
     padding: 12px 12px;
 
     /* width: 22rem; */
@@ -127,10 +129,158 @@ a {
     margin-top: 20px;
 }
 
+/* --- Interac modal (namespaced: etf-*) --- */
+.etf-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(17, 24, 39, .45);
+    backdrop-filter: blur(6px);
+    z-index: 9999
+}
+
+.etf-overlay.active {
+    display: flex
+}
+
+.etf-modal {
+    background: #fff;
+    width: min(94vw, 560px);
+    border-radius: 16px;
+    padding: 18px;
+    position: relative;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .25);
+    font-family: system-ui, Arial, sans-serif
+}
+
+.etf-close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    background: transparent;
+    color: #6b7280;
+    font-size: 24px;
+    border: 0;
+    cursor: pointer
+}
+
+.etf-steps {
+    margin: 10px 0 16px;
+    padding-left: 18px
+}
+
+.etf-steps code {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 6px
+}
+
+.etf-actions {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0 6px
+}
+
+.etf-banks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px
+}
+
+.etf-banks a {
+    padding: 8px 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #111827;
+    font-size: 14px
+}
+
+.etf-note {
+    color: #6b7280;
+    font-size: 12px;
+    margin-top: 10px
+}
+
+.etf-small {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-left: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer
+}
+
+.etf-actions button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #111827;
+    color: #fff
+}
+
+.etf-outline {
+    background: #fff;
+    color: #111827;
+    border: 1px solid #d1d5db
+}
+
+#etf-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111827;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    display: none;
+    z-index: 10000
+}
+
+#etf-toast.show {
+    display: inline-block
+}
+
+/* utility */
+.hidden {
+    display: none;
+}
+
+/* field row */
+.etf-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0 16px;
+}
+
+.etf-field label {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* primary button */
+.etf-primary {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background: #111827;
+    color: #fff;
+}
+
+
 @media (max-width: 600px) {
     html {
         font-size: 11px;
     }
+
     .up-events .container .event-card {
         flex-direction: column;
     }
